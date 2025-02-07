@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Technical | QA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" type="image/png" href="dist/img/govt-of-odisha.png" /> -->
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/font/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!-- toastr -->
+    <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/login.css">
+
+    <style>
+        .qa-section {
+            background: #c0c0c038;
+        }
+        
+        .input-val {
+            height: 1.5rem;
+            width: 2rem;
+        }
+        
+        .question-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .question-lables {
+            font-size: 14px;
+        }
+        
+        .answer-description {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        
+        .answer-container {
+            background-color: aliceblue;
+            margin: 1px 35px 35px 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <!-- <h4 class="text-center mt-4" id="login_title">Technical QA</h4> -->
+        <div class="container">
+
+            <div class="container-fluid qa-section mt-4 p-4">
+
+                <div class="question-container mt-3">
+                    <h5 class="question-text">1. Swap two variables without using a third variable</h4>
+                        <ul>
+                            <li><b class="question-lables">Question</b>: Swap two variables, a and b, without using a third variable or temporary storage.</li>
+                            <li><b class="question-lables">Skills Tested</b>: Understanding of arithmetic operations, destructuring, and variable manipulation.</li>
+
+                            <div class="row data-container mt-4">
+
+                                <div class="col-md-4">
+                                    <label for="">a = <input type="text" class="input-val" id="giveA"></label>
+                                    <label for="" class=" ml-4">b = <input type="text" class="input-val" id="giveB"></label>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn-sm btn-primary" onclick="swapNumber();">Swap</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="">a = <input type="text" class="input-val" id="setA" disabled></label>
+                                    <label for="" class=" ml-4">b = <input type="text" class="input-val" id="setB" disabled></label>
+                                </div>
+                            </div>
+
+                            <div class="row answer-container mt-4" id="answerContainer1" style="display: none;">
+                                <h6 class="answer-description">Answer</h6>
+                                <pre id="answerDescription1"></pre>
+                            </div>
+                        </ul>
+                </div>
+
+                <div class="question-container mt-4">
+                    <h5 class="question-text">2. Check if a number is a palindrome</h4>
+                        <ul>
+                            <li><b class="question-lables">Question</b>: Write a function to check if a number is a palindrome (i.e., the number reads the same forward and backward).</li>
+                            <li><b class="question-lables">Example</b>: 121 is a palindrome, but 123 is not.</li>
+                            <li><b class="question-lables">Skills Tested</b>: String manipulation, number conversion, logic implementation.</li>
+
+                            <div class="row answer-container mt-4" id="answerContainer2" style="display: none;">
+                                <h6 class="answer-description">Answer</h6>
+                                <pre id="answerDescription2"></pre>
+                            </div>
+                        </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="asset/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- toastar -->
+    <script src="plugins/toastr/toastr.min.js"></script>
+
+    <script src="asset/js/main.js"></script>
+    <script src="asset/js/action.js"></script>
+
+</body>
+
+</html>
